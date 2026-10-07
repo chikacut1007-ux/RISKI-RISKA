@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width,
+          initial-scale=1.0,
+          maximum-scale=1.0,
+          user-scalable=no">
+
+    <title>Riski & Riska</title>
+
+    <style>
+      .background-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#cover,
+#opening,
+#groom,
+#bride,
+#event,
+#rsvp,
+#closing {
+    position: relative;
+    overflow: hidden;
+}
+
+#cover .content,
+#opening .content,
+#groom .content,
+#bride .content,
+#event .content,
+#rsvp .content,
+#closing .content {
+    position: relative;
+    z-index: 1;
+}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f1ea;
+            color: #333;
+        }
+
+        section {
+            min-height: 100vh;
+            width: 100%;
+            padding: 40px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        button {
+            border: none;
+            padding: 13px 25px;
+            border-radius: 30px;
+            background: #333;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        /* COVER */
+
+        #cover {
+            background: #eee8df;
+        }
+
+        .cover-box {
+            padding: 30px;
+        }
+
+        .cover-box p {
+            margin-bottom: 8px;
+        }
+
+        /* SECTION */
+
+        #opening {
+            background: #f8f4ee;
+          padding-top:120px;
+        }
+
+        #groom {
+            background: #eee7dc;
+        }
+
+        #bride {
+            background: #f8f4ee;
+        }
+
+        #event {
+            background: #eee7dc;
+        }
+
+        #rsvp {
+            background: #f8f4ee;
+        }
+
+        #closing {
+            background: #eee7dc;
+        }
+
+        /* FORM */
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: none;
+        }
+
+        /* NAVIGATION */
+
+        .navigation {
+            position: fixed;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            background: rgba(255,255,255,0.9);
+            padding: 8px;
+            border-radius: 30px;
+            z-index: 999;
+        }
+
+        .navigation button {
+            width: 42px;
+            height: 42px;
+            padding: 0;
+            border-radius: 50%;
+            font-size: 14px;
+            background: #555;
+        }
+
+        /* MUSIC */
+
+        #musicButton {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            width: 45px;
+            height: 45px;
+            padding: 0;
+            border-radius: 50%;
+            z-index: 1000;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ==================== -->
+    <!-- COVER -->
+    <!-- ==================== -->
+
+    <section id="cover">
+<video
+    class="background-video"
+    autoplay
+    muted
+    loop
+    playsinline>
+    <source src="RISKI&RISKA/1.mp4" type="video/mp4">
+</video>
+        <div class="content cover-box">
+
+            <p>THE WEDDING OF</p>
+
+            <h1>R & R</h1>
+
+            <p>Kepada Yth.</p>
+
+            <h2 id="guestName">Tamu Undangan</h2>
+
+            <br>
+
+            <button onclick="openInvitation()">
+                Buka Undangan
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== -->
+    <!-- OPENING -->
+    <!-- ==================== -->
+
+    <section id="opening">
+<video
+    class="background-video"
+    autoplay
+    muted
+    loop
+    playsinline>
+    <source src="RISKI&RISKA/2.mp4" type="video/mp4">
+</video>
+        <div class="content">
+
+            
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== -->
+    <!-- GROOM -->
+    <!-- ==================== -->
+
+    <section id="groom">
+<video
+    class="background-video"
+    autoplay
+    muted
+    loop
+    playsinline>
+    <source src="RISKI&RISKA/3.mp4" type="video/mp4">
+</video>
+        <div class="content">
+
+            
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== -->
+    <!-- BRIDE -->
+    <!-- ==================== -->
+
+    <section id="bride">
+<video
+    class="background-video"
+    autoplay
+    muted
+    loop
+    playsinline>
+    <source src="RISKI&RISKA/4.mp4" type="video/mp4">
+</video>
+        <div class="content">
+
+            
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== -->
+    <!-- EVENT -->
+    <!-- ==================== -->
+
+    <section id="event">
+<video
+    class="background-video"
+    autoplay
+    muted
+    loop
+    playsinline>
+    <source src="RISKI&RISKA/5.mp4" type="video/mp4">
+</video>
+        < class="content">
+
+            
+
+            
+
+    </section>
+
+
+    <!-- ==================== -->
+    <!-- RSVP -->
+    <!-- ==================== -->
+
+    <section id="rsvp">
+<video
+    class="background-video"
+    autoplay
+    muted
+    loop
+    playsinline>
+    <source src="RISKI&RISKA/6.mp4" type="video/mp4">
+</video>
+        <div class="content">
+
+            <p>RSVP</p>
+
+            <h2>Konfirmasi Kehadiran</h2>
+
+            <form id="rsvpForm">
+
+                <input
+                    type="text"
+                    id="rsvpName"
+                    placeholder="Nama"
+                    required
+                >
+
+                <textarea
+                    id="message"
+                    placeholder="Ucapan untuk Riski & Riska"
+                ></textarea>
+
+                <button type="submit">
+                    Kirim
+                </button>
+
+            </form>
+
+            <p id="rsvpResult"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== -->
+    <!-- CLOSING -->
+    <!-- ==================== -->
+
+    <section id="closing">
+<video
+    class="background-video"
+    autoplay
+    muted
+    loop
+    playsinline>
+    <source src="RISKI&RISKA/7.mp4" type="video/mp4">
+</video>
+        <div class="content">
+
+            <h1>Riski & Riska</h1>
+
+            <p>
+                Terima kasih atas doa dan
+                kehadiran Bapak/Ibu/Saudara/i.
+            </p>
+
+            <p>
+                Wassalamu'alaikum
+                Warahmatullahi Wabarakatuh
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== -->
+    <!-- MUSIC -->
+    <!-- ==================== -->
+
+    <audio id="backgroundMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicButton" onclick="toggleMusic()">
+        ♪
+    </button>
+
+
+    <!-- ==================== -->
+    <!-- NAVIGATION -->
+    <!-- ==================== -->
+
+    <div class="navigation">
+
+        <button onclick="goTo('cover')">1</button>
+
+        <button onclick="goTo('opening')">2</button>
+
+        <button onclick="goTo('groom')">3</button>
+
+        <button onclick="goTo('bride')">4</button>
+
+        <button onclick="goTo('event')">5</button>
+
+        <button onclick="goTo('rsvp')">6</button>
+
+        <button onclick="goTo('closing')">7</button>
+
+    </div>
+
+
+    <!-- ==================== -->
+    <!-- JAVASCRIPT -->
+    <!-- ==================== -->
+
+    <script>
+
+        /* ====================
+           BUKA UNDANGAN
+        ==================== */
+
+        function openInvitation() {
+
+            const music =
+                document.getElementById("backgroundMusic");
+
+            music.play().catch(function(error) {
+                console.log("Musik belum bisa autoplay:", error);
+            });
+
+            goTo("opening");
+        }
+
+
+        /* ====================
+           NAVIGASI
+        ==================== */
+
+        function goTo(sectionId) {
+
+            const section =
+                document.getElementById(sectionId);
+
+            if (section) {
+
+                section.scrollIntoView({
+                    behavior: "smooth"
+                });
+
+            }
+
+        }
+
+
+        /* ====================
+           MUSIC
+        ==================== */
+
+        function toggleMusic() {
+
+            const music =
+                document.getElementById("backgroundMusic");
+
+            const button =
+                document.getElementById("musicButton");
+
+            if (music.paused) {
+
+                music.play();
+
+                button.innerHTML = "⏸";
+
+            } else {
+
+                music.pause();
+
+                button.innerHTML = "♪";
+
+            }
+
+        }
+
+
+        /* ====================
+           NAMA TAMU DARI URL
+        ==================== */
+
+        const params =
+            new URLSearchParams(
+                window.location.search
+            );
+
+        const guest =
+            params.get("to");
+
+
+        if (guest) {
+
+            const decodedGuest =
+                decodeURIComponent(guest);
+
+            document.getElementById("guestName")
+                .innerText = decodedGuest;
+
+            document.getElementById("rsvpName")
+                .value = decodedGuest;
+
+        }
+
+
+        
+                
+
+
+            const days =
+                Math.floor(
+                    difference / (1000 * 60 * 60 * 24)
+                );
+
+
+            const hours =
+                Math.floor(
+                    (difference /
+                    (1000 * 60 * 60)) % 24
+                );
+
+
+            const minutes =
+                Math.floor(
+                    (difference /
+                    (1000 * 60)) % 60
+                );
+
+
+            const seconds =
+                Math.floor(
+                    (difference / 1000) % 60
+                );
+
+
+            document.getElementById("countdown")
+                .innerText =
+                days + " : " +
+                hours + " : " +
+                minutes + " : " +
+                seconds;
+
+        }
+
+
+        updateCountdown();
+
+        setInterval(updateCountdown, 1000);
+
+
+        /* ====================
+           RSVP
+        ==================== */
+
+        document.getElementById("rsvpForm")
+            .addEventListener("submit", function(event) {
+
+                event.preventDefault();
+
+                document.getElementById("rsvpResult")
+                    .innerText =
+                    "Terima kasih atas konfirmasinya 🤍";
+
+            });
+
+    </script>
+
+</body>
+</html>
